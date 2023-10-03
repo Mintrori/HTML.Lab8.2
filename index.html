@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            margin: 0px;
+            min-height: 100%;
+            width: 100%;
+        }
+        #title {
+            background-color: orange;
+            color: white;
+            font-size: 40px;
+            padding: 1%;
+            width: 98%;
+            text-align: center;
+        }
+        #main {
+            width: 100%;
+            background-color: black;
+            padding-top: 10px;
+            display: flex;
+        }
+        #list {
+            width: 20%;
+        }
+        #list div {
+            background-color: green;
+            border: 3px solid red;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            color: white;
+        }
+        #pinkBlock {
+            height: 600px;
+            width: 80%;
+            background-color: pink;
+        }
+        #greyBox {
+            height: 300px;
+            width: 100%;
+            background-color: gray;
+        }
+        @media all and (orientation: portrait), all and (max-width: 480px)
+        {
+            #main {
+                display: block;
+            }
+            #list {
+                width: 100%;
+            }
+            #pinkBlock {
+                height: 600px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Online Exam System</div>
+    <div id="main">
+        <div id="list">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Courses</div>
+            <div>Product</div>
+            <div>Service</div>
+            <div>Gallery</div>
+        </div>
+        <div id="pinkBlock"></div>
+    </div>
+    <div id="greyBox"></div>
+</body>
+</html>
